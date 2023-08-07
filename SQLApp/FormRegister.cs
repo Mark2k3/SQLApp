@@ -7,6 +7,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -33,7 +34,7 @@ namespace SQLApp
 
             DB db = new DB();
             String loginUser = textBoxLoginReg.Text;
-            String passUser = textBoxPasswordReg.Text;
+            String passUser = md5.HashPassword(textBoxPasswordReg.Text);
             String firstNameUser = textBoxFirstName.Text;
             String lastNameUser = textBoxLastName.Text;
 

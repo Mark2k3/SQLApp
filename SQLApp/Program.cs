@@ -9,16 +9,10 @@ namespace SQLApp
     internal static class Program
     {
         /// <summary>
-        /// 
-        /// fix names
-        /// И правильнее было бы выводить как результат работы
-        /// не просто yes no, а логин и пароль данного пользователя. И, соответственно, в команде
-        /// к базе данных нет никакого смысла делать выборку всех пользователей, а необходимо лишь одного.
-        /// 
-        /// Make different langueges
-        /// Make a difference between small/capital letters in pass/login
-        /// Interdict repetition of pass/login
-        /// Add hashes
+        /// move first Registration mouse position 
+        /// Make different languages
+        /// Make a difference between small/capital letters in login
+        /// add a config for DB con
         /// </summary>
                 [STAThread]
         static void Main()

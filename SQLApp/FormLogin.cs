@@ -69,7 +69,7 @@ namespace SQLApp
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             String loginUser = textBoxLogin.Text;
-            String passUser = textBoxPassword.Text;
+            String passUser = md5.HashPassword(textBoxPassword.Text);
 
             DB db = new DB();
             DataTable table = new DataTable();
